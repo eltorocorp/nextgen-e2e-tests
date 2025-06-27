@@ -13,8 +13,8 @@ export const ClientPortalLogin = async (page) => {
 
   await page.waitForLoadState("load");
 
-  await page.fill("#username", "kennedym103@gmail.com");
-  await page.fill("#password", "Bridget618!");
+  await page.fill("#username", "");
+  await page.fill("#password", "");
 
   await page.click("#kc-login");
   await page.waitForURL((url) =>
