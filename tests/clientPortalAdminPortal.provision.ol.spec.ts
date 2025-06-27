@@ -23,7 +23,7 @@ test.use({ browserName: "chromium" });
 test.setTimeout(0);
 
 const filePath =
-  "/Users/martinkennedy/eltoro/playwright/assets/alan-homes-kind-tiny-clean.csv";
+  "/Users/martinkennedy/eltoro/nextgen-e2e-tests/assets/alan-homes-kind-tiny-clean.csv";
 
 test("e2eXandrDeploy", async ({ page }) => {
   await ClientPortalLogin(page);
@@ -32,7 +32,7 @@ test("e2eXandrDeploy", async ({ page }) => {
   await AddAudience(page, filePath);
   await AddBanner(page);
   await EditOlName(page);
-  
+
   await SubmitOLNavigateToBackstage(page);
   await EditOLNameAdminPortal(page);
   await EditCPMAdminPortal(page);
